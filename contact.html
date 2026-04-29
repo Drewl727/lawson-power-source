@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us — Lawson Power Source LLC · Hartford, CT</title>
+  <meta name="description" content="Request a free quote or schedule service with Lawson Power Source LLC. Call (860) 983-1663 or fill out our online form. Emergency line available 24/7.">
+  <meta name="theme-color" content="#0c1422">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .success-message {
+      display: none;
+      background: rgba(34,197,94,.1);
+      border: 1px solid rgba(34,197,94,.35);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      color: #166534;
+      font-weight: 500;
+      margin-top: 1rem;
+    }
+    .success-message.is-visible { display: block; }
+  </style>
+</head>
+<body>
+
+  <a class="skip-nav" href="#main">Skip to main content</a>
+
+  <!-- NAV -->
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Lawson Power Source LLC — home">
+          <span class="nav__logo-name">Lawson Power Source</span>
+          <span class="nav__logo-sub">LLC · Hartford, CT</span>
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="contact.html" class="nav__cta">Get a Quote</a></li>
+        </ul>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="6"  x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="page-heading">
+      <div class="page-hero__inner">
+        <p class="page-hero__eyebrow">Get in Touch</p>
+        <h1 id="page-heading">Contact Us</h1>
+        <p>Request a free estimate, schedule service, or ask a question. We respond to all inquiries within one business day — and same-day for emergencies.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT LAYOUT -->
+    <section class="section section--light" aria-labelledby="form-heading" style="padding-top:7rem;">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- FORM -->
+          <div>
+            <h2 id="form-heading" style="font-size:clamp(1.8rem,4vw,2.8rem);color:var(--navy-800);margin-bottom:1.75rem;">Request a Free Quote</h2>
+            <div class="form-card">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+                method="POST"
+                novalidate
+                aria-label="Contact and quote request form"
+              >
+                <div class="form-group--inline">
+                  <div class="form-group">
+                    <label for="first-name">First Name <span aria-hidden="true" style="color:var(--red)">*</span></label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first_name"
+                      autocomplete="given-name"
+                      required
+                      aria-required="true"
+                      placeholder="Victor"
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name <span aria-hidden="true" style="color:var(--red)">*</span></label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last_name"
+                      autocomplete="family-name"
+                      required
+                      aria-required="true"
+                      placeholder="Lawson"
+                    >
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number <span aria-hidden="true" style="color:var(--red)">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    required
+                    aria-required="true"
+                    placeholder="(860) 555-0123"
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                  >
+                  <p class="form-note" id="email-note">Optional — required if you prefer email contact.</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="service-type">Service Type <span aria-hidden="true" style="color:var(--red)">*</span></label>
+                  <select
+                    id="service-type"
+                    name="service_type"
+                    required
+                    aria-required="true"
+                  >
+                    <option value="" disabled selected>Select a service…</option>
+                    <option value="electrical-wiring">Electrical Wiring &amp; Repairs</option>
+                    <option value="panel-upgrade">Panel Upgrade / Installation</option>
+                    <option value="generator">Generator Installation</option>
+                    <option value="renovation">Bathroom or Kitchen Renovation</option>
+                    <option value="plumbing-hvac">Plumbing Rough-In / HVAC Work</option>
+                    <option value="emergency">Emergency Electrical Service</option>
+                    <option value="property-management">Property Management Services</option>
+                    <option value="other">Other / Not Sure Yet</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="project-description">Project Description <span aria-hidden="true" style="color:var(--red)">*</span></label>
+                  <textarea
+                    id="project-description"
+                    name="project_description"
+                    required
+                    aria-required="true"
+                    placeholder="Tell us about your project — what's happening, your address, and any details that will help us give you an accurate quote."
+                    rows="5"
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <fieldset style="border:none;padding:0;">
+                    <legend style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-600);margin-bottom:.6rem;">
+                      Preferred Contact Method <span aria-hidden="true" style="color:var(--red)">*</span>
+                    </legend>
+                    <div class="radio-group" role="radiogroup">
+                      <label class="radio-label">
+                        <input type="radio" name="preferred_contact" value="call" required> Phone Call
+                      </label>
+                      <label class="radio-label">
+                        <input type="radio" name="preferred_contact" value="text"> Text Message
+                      </label>
+                      <label class="radio-label">
+                        <input type="radio" name="preferred_contact" value="email"> Email
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <!-- Honeypot spam field — hidden from users -->
+                <input type="text" name="_honeypot" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;font-size:1.2rem;padding:1rem;">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  Send My Request
+                </button>
+
+                <div class="success-message" id="success-msg" role="alert" aria-live="polite">
+                  <strong>Thank you!</strong> We received your request and will be in touch within one business day.
+                </div>
+              </form>
+            </div>
+            <p style="font-size:.8rem;color:var(--slate-400);margin-top:1rem;text-align:center;">
+              Fields marked <span style="color:var(--red)">*</span> are required. We never sell or share your information.
+            </p>
+          </div>
+
+          <!-- SIDEBAR -->
+          <aside>
+            <div class="contact-info-card">
+              <h3>Contact Information</h3>
+              <div class="contact-detail">
+                <div class="contact-detail__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.5z"/></svg>
+                </div>
+                <div>
+                  <p class="contact-detail__label">Phone</p>
+                  <p><a href="tel:8609831663">(860) 983-1663</a></p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p class="contact-detail__label">Email</p>
+                  <p><a href="mailto:lawsonpowersource@yahoo.com">lawsonpowersource@yahoo.com</a></p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <div class="contact-detail__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="contact-detail__label">Address</p>
+                  <p>919 Albany Ave<br>Hartford, CT 06112</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hours-card">
+              <h3>Business Hours</h3>
+              <div class="hours-row" role="listitem">
+                <span>Monday – Friday</span>
+                <span>8:00 AM – 6:00 PM</span>
+              </div>
+              <div class="hours-row" role="listitem">
+                <span>Saturday</span>
+                <span>9:00 AM – 3:00 PM</span>
+              </div>
+              <div class="hours-row" role="listitem">
+                <span>Sunday</span>
+                <span>Closed (Emergency Only)</span>
+              </div>
+              <div class="hours-emergency" role="note" aria-label="24/7 emergency service available">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Emergency Line Available 24/7
+              </div>
+            </div>
+
+            <div style="margin-top:1.5rem;">
+              <a href="tel:8609831663" class="btn btn--emergency" style="width:100%;justify-content:center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17.5z"/></svg>
+                Call for Emergencies
+              </a>
+              <p style="font-size:.75rem;text-align:center;color:var(--slate-400);margin-top:.5rem;">24/7 emergency line · (860) 983-1663</p>
+            </div>
+
+            <!-- MAP -->
+            <div aria-label="Map placeholder for 919 Albany Ave, Hartford CT 06112">
+              <!--
+                GOOGLE MAPS EMBED — replace the src below with your embed URL:
+                Maps > Share > Embed a map > copy src from the iframe tag
+              -->
+              <iframe
+                class="map-embed"
+                title="Lawson Power Source LLC location — 919 Albany Ave, Hartford CT"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.5!2d-72.699!3d41.783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e653a2b7e3f7c5%3A0x0!2s919+Albany+Ave%2C+Hartford%2C+CT+06112!5e0!3m2!1sen!2sus!4v1700000000000"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                aria-label="Map showing Lawson Power Source LLC at 919 Albany Ave, Hartford CT"
+              ></iframe>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <span class="footer__logo-name">Lawson Power Source LLC</span>
+        <p class="footer__tagline">"Power. Precision. Peace of Mind."</p>
+        <p class="footer__contact-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          919 Albany Ave, Hartford, CT 06112
+        </p>
+        <p class="footer__contact-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.5z"/></svg>
+          <a href="tel:8609831663">(860) 983-1663</a>
+        </p>
+        <p class="footer__contact-line">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:lawsonpowersource@yahoo.com">lawsonpowersource@yahoo.com</a>
+        </p>
+      </div>
+      <div>
+        <p class="footer__col-heading">Quick Links</p>
+        <ul class="footer__nav-list" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-heading">Services</p>
+        <ul class="footer__nav-list" role="list">
+          <li><a href="services.html">Electrical Wiring</a></li>
+          <li><a href="services.html">Panel Upgrades</a></li>
+          <li><a href="services.html">Generator Install</a></li>
+          <li><a href="services.html">Renovations</a></li>
+          <li><a href="services.html">Emergency Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 Lawson Power Source LLC · All Rights Reserved</p>
+      <p class="footer__biz-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Black-Owned Business · Hartford, CT
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Formspree AJAX submission for better UX
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('success-msg');
+
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        const action = form.getAttribute('action');
+        // Only intercept if Formspree ID has been set
+        if (!action || action.includes('YOUR_FORMSPREE_ID')) return;
+
+        e.preventDefault();
+        const submitBtn = form.querySelector('[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+
+        try {
+          const res = await fetch(action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' },
+          });
+
+          if (res.ok) {
+            form.reset();
+            successMsg.classList.add('is-visible');
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          } else {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            alert('Something went wrong. Please call us at (860) 983-1663.');
+          }
+        } catch {
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          alert('Something went wrong. Please call us at (860) 983-1663.');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
