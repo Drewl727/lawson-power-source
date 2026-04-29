@@ -141,43 +141,13 @@
     <div class="cta-banner">
       <div class="container">
         <h2>Not Sure What You Need?</h2>
-        <p>Use our Service Estimator below — 5 yes/no questions to determine whether you need emergency service, a scheduled appointment, or routine maintenance.</p>
-        <a href="#emergency-checker" class="btn btn--dark">
+        <p>Use our interactive Emergency Checker — 5 yes/no questions to find out if you need to call now, schedule soon, or just book a routine appointment.</p>
+        <a href="checker.html" class="btn btn--dark">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
           Use the Emergency Checker
         </a>
       </div>
     </div>
-
-    <!-- EMERGENCY CHECKER WIDGET -->
-    <section class="section section--dark" id="emergency-checker" aria-labelledby="checker-heading">
-      <div class="container">
-        <div class="section-heading section-heading--center">
-          <p class="section-heading__eyebrow">Interactive Tool</p>
-          <h2 id="checker-heading">Electrical Emergency Checker</h2>
-          <p>Answer 5 quick questions and we'll tell you exactly what level of service you need — and what to do right now.</p>
-        </div>
-
-        <div class="checker-wrapper" id="emergency-checker-widget" role="region" aria-labelledby="checker-heading">
-          <div class="checker-header">
-            <div class="checker-header__icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-            </div>
-            <div>
-              <p class="checker-header__title">Is This an Electrical Emergency?</p>
-              <p class="checker-header__sub">5 questions · Takes about 30 seconds</p>
-            </div>
-          </div>
-          <div class="checker-body">
-            <div class="checker-progress" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-label="Question progress"></div>
-            <div class="checker-body-content"></div>
-            <!-- aria-live region for screen reader announcements -->
-            <div aria-live="polite" aria-atomic="true" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;"></div>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
     <!-- BOTTOM CTA -->
     <section class="cta-banner">
@@ -245,6 +215,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script src="js/emergency-checker.js"></script>
 </body>
 </html>
